@@ -16,3 +16,7 @@ a5 = (1/detD)*(-M*M*r*(-M*l*l)-M*(M*r*l+ml*l*r)*(-2*M*l));
 a6 = (1/detD)*((Ir*r+M*r*r+ml*l*l)*2*l*M*g+(-2*M*M*r*r*l-2*M*r*r*ml*l)*M*g+(-M*M*r*r*l*l-2*M*r*l*ml*l*r-ml*ml*l*l*r*r)*k+(Ir*r+M*r*r+ml*l*l)*(Il*l+l*l+ml*l*l)*k);
 b1 = (1/detD)*(M*(Il*l+l*l+ml*l*l));
 b2 = (1/detD)*(-M*(M*r*l+ml*l*r));
+D=0;
+C=[0;0;1;0;0;0];
+B=[0;b1;0;b2;0;0];
+A = [0 1 0 0 0 0;0 0 a1 0 a4 0;0 0 0 1 0 0; 0 0 a2 0 a5 0;0 0 0 0 0 1;0 0 a3 0 a6 0];
