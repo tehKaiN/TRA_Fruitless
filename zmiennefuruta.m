@@ -43,3 +43,7 @@ ster = ss(A-B*K,[],C,0);
 figure(2)
 [Y,T,x]=lsim(ster,u,t,x0);
 plot(T,Y)
+
+
+% Wspó³czynniki transmitancji
+tran = ss2tf(A,B,C,D);
