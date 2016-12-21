@@ -27,6 +27,7 @@
 #include "ComponentUtilities.h"
 
 // Include component code files
+#include "Furuta_components.hpp"
 
 using namespace hopsan;
 
@@ -34,6 +35,7 @@ using namespace hopsan;
 extern "C" DLLEXPORT void register_contents(ComponentFactory* pComponentFactory, NodeFactory* pNodeFactory)
 {
     // Register Components
+    pComponentFactory->registerCreatorFunction("Furuta_components", Furuta_components::Creator);
 
     // Register Custom Nodes (not yet supported)
     HOPSAN_UNUSED(pNodeFactory);

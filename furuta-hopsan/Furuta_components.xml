@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="Furuta_components.hpp" typename="Furuta_components" displayname="Furuta Q">
+        <icons>
+            <icon scale="1" path="" iconrotation="ON" type="user"/>
+            <icon scale="1" path="" iconrotation="ON" type="iso"/>
+        </icons>
+        <ports>
+            <port name="u" x="0.0" y="0.1" a="180" visible="true"/>
+            <port name="M" x="0.0" y="0.2" a="180" visible="true"/>
+            <port name="Ir" x="0.0" y="0.3" a="180" visible="true"/>
+            <port name="Il" x="0.0" y="0.4" a="180" visible="true"/>
+            <port name="r" x="0.0" y="0.5" a="180" visible="true"/>
+            <port name="l" x="0.0" y="0.6" a="180" visible="true"/>
+            <port name="mr" x="0.0" y="0.7" a="180" visible="true"/>
+            <port name="ml" x="0.0" y="0.8" a="180" visible="true"/>
+            <port name="k" x="0.0" y="0.9" a="180" visible="true"/>
+            <port name="q1" x="1.0" y="0.142857" a="0" visible="true"/>
+            <port name="dotq1" x="1.0" y="0.285714" a="0" visible="true"/>
+            <port name="q2" x="1.0" y="0.428571" a="0" visible="true"/>
+            <port name="dotq2" x="1.0" y="0.571429" a="0" visible="true"/>
+            <port name="x" x="1.0" y="0.714286" a="0" visible="true"/>
+            <port name="dotx" x="1.0" y="0.857143" a="0" visible="true"/>
+        </ports>
+        <animation/>
+    </modelobject>
+</hopsanobjectappearance>

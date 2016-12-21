@@ -1,0 +1,1 @@
+call "C:/Users/tehKa/Desktop/Hopsan-0.7.7_r9159-win64/mingw64/bin/g++.exe" -Dhopsan=hopsan -fPIC -w -Wl,--rpath -Wl,"D:/prg/_git/TRA_Fruitless/furuta-hopsan" -shared D:/prg/_git/TRA_Fruitless/furuta-hopsan/Furuta.cc -o Furuta.dll -I"C:/Users/tehKa/Desktop/Hopsan-0.7.7_r9159-win64/HopsanCore/include" -L"C:/Users/tehKa/Desktop/Hopsan-0.7.7_r9159-win64/bin" -lHopsanCore
