@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hopsancomponentlibrary xmlversion="0.1" libversion="1" name="Furuta">
+    <lib debug_ext="_d">Furuta</lib>
+    <buildflags>
+      <cflags></cflags>
+      <lflags></lflags>
+    </buildflags>
+    <source>Furuta.cc</source>
+</hopsancomponentlibrary>
