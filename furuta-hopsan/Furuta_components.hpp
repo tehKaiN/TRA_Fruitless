@@ -168,11 +168,10 @@ namespace hopsan {
             mr = (*mpMr);
             ml = (*mpMl);
             k = (*mpK);
-						
+												
+            //WRITE YOUR INITIALIZATION CODE HERE
 						initializeMatrixA(A, M, Ir, Il, r, l, mr, ml, k);
 						initializeVectorB(B, M, Ir, Il, r, l, mr, ml, k);
-						
-            //WRITE YOUR INITIALIZATION CODE HERE
 
             //Write new values to nodes
             (*mpQ1) = q1;
