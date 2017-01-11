@@ -44,7 +44,6 @@ double *pInputNode0;
 double *pInputNode1;
 double *pOutputNode0;
 double *pOutputNode1;
-double *pOutputNode2;
 
 static void mdlInitializeSizes(SimStruct *S)
 {
@@ -70,12 +69,11 @@ static void mdlInitializeSizes(SimStruct *S)
     ssSetInputPortDirectFeedThrough(S, 1, 1);
 
     //Define S-function output signals
-    if (!ssSetNumOutputPorts(S,4)) return;				//Number of output signals
+    if (!ssSetNumOutputPorts(S,3)) return;				//Number of output signals
     ssSetOutputPortWidth(S, 0, DYNAMICALLY_SIZED);		//Output signal 0
     ssSetOutputPortWidth(S, 1, DYNAMICALLY_SIZED);		//Output signal 1
-    ssSetOutputPortWidth(S, 2, DYNAMICALLY_SIZED);		//Output signal 2
 
-    ssSetOutputPortWidth(S, 3, DYNAMICALLY_SIZED);		//Debug output signal
+    ssSetOutputPortWidth(S, 2, DYNAMICALLY_SIZED);		//Debug output signal
     ssSetNumSampleTimes(S, 1);
     ssSetOptions(S, SS_OPTION_EXCEPTION_FREE_CODE);
 
@@ -148,8 +146,7 @@ static void mdlInitializeSampleTimes(SimStruct *S)
     pInputNode0 = pComponentSystem->getSubComponent("Ein")->getSafeNodeDataPtr("out", 0);
     pInputNode1 = pComponentSystem->getSubComponent("Fin")->getSafeNodeDataPtr("out", 0);
     pOutputNode0 = pComponentSystem->getSubComponent("Pout")->getSafeNodeDataPtr("in", 0);
-    pOutputNode1 = pComponentSystem->getSubComponent("Tout")->getSafeNodeDataPtr("in", 0);
-    pOutputNode2 = pComponentSystem->getSubComponent("Vout")->getSafeNodeDataPtr("in", 0);
+    pOutputNode1 = pComponentSystem->getSubComponent("Vout")->getSafeNodeDataPtr("in", 0);
 
 
     // Free parameter buffer memory
@@ -169,7 +166,6 @@ static void mdlOutputs(SimStruct *S, int_T tid)
         real_T *y0 = ssGetOutputPortRealSignal(S,0);
     real_T *y1 = ssGetOutputPortRealSignal(S,1);
     real_T *y2 = ssGetOutputPortRealSignal(S,2);
-    real_T *y3 = ssGetOutputPortRealSignal(S,3);
 
     int_T width1 = ssGetOutputPortWidth(S,0);
 
@@ -181,9 +177,8 @@ static void mdlOutputs(SimStruct *S, int_T tid)
     double output0;
     double output1;
     double output2;
-    double output3;
 
-    output3 = 0;		//Error code 0: Nothing is wrong
+    output2 = 0;		//Error code 0: Nothing is wrong
 
         (*pInputNode0) = input0;
         (*pInputNode1) = input1;
@@ -193,14 +188,12 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
         output0 = (*pOutputNode0);
         output1 = (*pOutputNode1);
-        output2 = (*pOutputNode2);
 
 
     //Output parameters
     *y0 = output0;
     *y1 = output1;
     *y2 = output2;
-    *y3 = output3;
 
     while(gHopsanCore.checkMessage())
     {
