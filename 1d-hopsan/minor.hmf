@@ -2,7 +2,7 @@
 <hopsanmodelfile hmfversion="0.4" hopsancoreversion="0.7.7" hopsanguiversion="0.7.7">
   <requirements/>
   <system cqstype="UndefinedCQSType" locked="false" typename="Subsystem" name="minor" subtypename="">
-    <simulationtime stop="10" start="0" timestep="0.001" inherit_timestep="true"/>
+    <simulationtime stop="100" start="0" timestep="0.001" inherit_timestep="true"/>
     <simulationlogsettings starttime="0" numsamples="2048"/>
     <parameters/>
     <aliases/>
@@ -154,7 +154,7 @@
           <port nodetype="NodeSignal" name="B"/>
         </ports>
         <hopsangui>
-          <pose a="180" flipped="false" x="2633.02" y="2440.5"/>
+          <pose a="0" flipped="false" x="2638.02" y="2456.5"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0"/>
           <hopsanobjectappearance version="0.3">
@@ -248,7 +248,7 @@
           <port porttype="WritePortType" nodetype="NodeSignal" name="out"/>
         </ports>
         <hopsangui>
-          <pose a="0" flipped="false" x="2973.42" y="2557.38"/>
+          <pose a="0" flipped="false" x="3022.42" y="2556.38"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0">
             <movable idx="0">
@@ -288,7 +288,7 @@
           <port nodetype="NodeSignal" name="x_max"/>
         </ports>
         <hopsangui>
-          <pose a="0" flipped="false" x="2877.97" y="2427.85"/>
+          <pose a="0" flipped="false" x="2910.97" y="2339.85"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0">
             <movable idx="0">
@@ -388,7 +388,7 @@
           <port nodetype="NodeSignal" name="k"/>
         </ports>
         <hopsangui>
-          <pose a="0" flipped="false" x="2761.22" y="2434.85"/>
+          <pose a="0" flipped="false" x="2776.22" y="2339.85"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0">
             <movable idx="0">
@@ -466,7 +466,7 @@
           <port porttype="WritePortType" nodetype="NodeSignal" name="out"/>
         </ports>
         <hopsangui>
-          <pose a="0" flipped="false" x="2739.02" y="2554.2"/>
+          <pose a="0" flipped="false" x="2736.02" y="2563.2"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0">
             <movable idx="0">
@@ -541,6 +541,25 @@
           </hopsanobjectappearance>
         </hopsangui>
       </component>
+      <component cqstype="S" locked="false" typename="SignalSink" name="Scope_6" subtypename="">
+        <parameters>
+          <parameter type="double" value="0" name="in_bottom#Value" unit=""/>
+        </parameters>
+        <ports>
+          <port porttype="ReadMultiportType" nodetype="NodeSignal" name="in"/>
+          <port porttype="ReadPortType" nodetype="NodeSignal" name="in_bottom"/>
+        </ports>
+        <hopsangui>
+          <pose a="0" flipped="false" x="3132" y="2516"/>
+          <nametext visible="0" position="0"/>
+          <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0"/>
+          <hopsanobjectappearance version="0.3">
+            <modelobject typename="SignalSink" displayname="Scope_6">
+              <ports/>
+            </modelobject>
+          </hopsanobjectappearance>
+        </hopsangui>
+      </component>
       <component cqstype="S" locked="false" typename="SignalStep" name="Step" subtypename="">
         <parameters>
           <parameter type="double" value="0" name="y_0#Value" unit=""/>
@@ -564,6 +583,25 @@
           </hopsanobjectappearance>
         </hopsangui>
       </component>
+      <component cqstype="S" locked="false" typename="SignalSink" name="Scope_5" subtypename="">
+        <parameters>
+          <parameter type="double" value="0" name="in_bottom#Value" unit=""/>
+        </parameters>
+        <ports>
+          <port porttype="ReadMultiportType" nodetype="NodeSignal" name="in_right"/>
+          <port porttype="ReadPortType" nodetype="NodeSignal" name="in_bottom"/>
+        </ports>
+        <hopsangui>
+          <pose a="0" flipped="false" x="2571" y="2536.2"/>
+          <nametext visible="0" position="0"/>
+          <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0"/>
+          <hopsanobjectappearance version="0.3">
+            <modelobject typename="SignalSink" displayname="Scope_5">
+              <ports/>
+            </modelobject>
+          </hopsanobjectappearance>
+        </hopsangui>
+      </component>
       <component cqstype="S" locked="false" typename="SignalConstant" name="Constant" subtypename="">
         <parameters>
           <parameter type="double" value="10" name="y#Value" unit=""/>
@@ -572,7 +610,7 @@
           <port porttype="WritePortType" nodetype="NodeSignal" name="y"/>
         </ports>
         <hopsangui>
-          <pose a="180" flipped="false" x="3086" y="2423.85"/>
+          <pose a="180" flipped="false" x="3086" y="2335.85"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0"/>
           <hopsanobjectappearance version="0.3">
@@ -619,7 +657,7 @@
           <port porttype="PowerPortType" nodetype="NodeMechanic" name="P1"/>
         </ports>
         <hopsangui>
-          <pose a="180" flipped="false" x="3009.62" y="2423.85"/>
+          <pose a="180" flipped="false" x="3016.62" y="2335.85"/>
           <nametext visible="0" position="0"/>
           <animation flowspeed="100" hydraulicmaxpressure="20000000" hydraulicminpressure="0">
             <movable idx="0">
@@ -789,30 +827,14 @@
           <style>solid</style>
         </hopsangui>
       </connect>
-      <connect endport="P2" startport="P2" endcomponent="Ball_Screw" startcomponent="Torsional_Spring_1">
-        <hopsangui>
-          <coordinates>
-            <coordinate x="2534.51999999999998181011" y="2440.50000000000000000000"/>
-            <coordinate x="2559.51647326666716253385" y="2440.50000000000000000000"/>
-            <coordinate x="2559.51647326666716253385" y="2440.50000000000000000000"/>
-            <coordinate x="2686.51999999999998181011" y="2440.50000000000000000000"/>
-          </coordinates>
-          <geometries>
-            <geometry>vertical</geometry>
-            <geometry>horizontal</geometry>
-            <geometry>vertical</geometry>
-          </geometries>
-          <style>solid</style>
-        </hopsangui>
-      </connect>
       <connect endport="P1" startport="P1" endcomponent="Translational_Spring" startcomponent="Ball_Screw">
         <hopsangui>
           <coordinates>
-            <coordinate x="2633.01999999999998181011" y="2460.00000000000000000000"/>
-            <coordinate x="2638.01647326666716253385" y="2460.00000000000000000000"/>
-            <coordinate x="2638.01647326666716253385" y="2496.99533653333310212474"/>
-            <coordinate x="2744.71999999999979991117" y="2496.99533653333310212474"/>
-            <coordinate x="2744.71999999999979991117" y="2434.84999999999990905053"/>
+            <coordinate x="2638.02000000000043655746" y="2437.00000000000000000000"/>
+            <coordinate x="2637.01647326666716253385" y="2437.00000000000000000000"/>
+            <coordinate x="2637.01647326666716253385" y="2338.99533653333310212474"/>
+            <coordinate x="2759.71999999999934516381" y="2338.99533653333310212474"/>
+            <coordinate x="2759.71999999999934516381" y="2339.85000000000036379788"/>
           </coordinates>
           <geometries>
             <geometry>vertical</geometry>
@@ -826,10 +848,10 @@
       <connect endport="P1" startport="P2" endcomponent="Translational_Mass_With_Coulomb_Friction" startcomponent="Translational_Spring">
         <hopsangui>
           <coordinates>
-            <coordinate x="2777.71999999999979991117" y="2434.84999999999990905053"/>
-            <coordinate x="2777.71999999999979991117" y="2436.98033653333368420135"/>
-            <coordinate x="2846.10500000000001818989" y="2436.98033653333368420135"/>
-            <coordinate x="2846.10500000000001818989" y="2423.85000000159971023095"/>
+            <coordinate x="2792.71999999999934516381" y="2339.85000000000036379788"/>
+            <coordinate x="2792.71999999999934516381" y="2339.98033653333368420135"/>
+            <coordinate x="2879.10499999999956344254" y="2339.98033653333368420135"/>
+            <coordinate x="2879.10499999999956344254" y="2335.85000000160016497830"/>
           </coordinates>
           <geometries>
             <geometry>horizontal</geometry>
@@ -839,45 +861,13 @@
           <style>solid</style>
         </hopsangui>
       </connect>
-      <connect endport="P1" startport="P1" endcomponent="Translational_Mass_With_Coulomb_Friction" startcomponent="Position_Transducer">
-        <hopsangui>
-          <coordinates>
-            <coordinate x="2739.01999999999998181011" y="2572.19999999999981810106"/>
-            <coordinate x="2739.01999999999998181011" y="2592.03033653333432084764"/>
-            <coordinate x="2846.10500000000001818989" y="2592.03033653333432084764"/>
-            <coordinate x="2846.10500000000001818989" y="2423.85000000159971023095"/>
-          </coordinates>
-          <geometries>
-            <geometry>horizontal</geometry>
-            <geometry>vertical</geometry>
-            <geometry>horizontal</geometry>
-          </geometries>
-          <style>dashed</style>
-        </hopsangui>
-      </connect>
-      <connect endport="P1" startport="P1" endcomponent="Translational_Mass_With_Coulomb_Friction" startcomponent="Velocity_Transducer">
-        <hopsangui>
-          <coordinates>
-            <coordinate x="2973.42000000000007275958" y="2575.38000000000010913936"/>
-            <coordinate x="2973.42000000000007275958" y="2591.63033653333377515082"/>
-            <coordinate x="2846.10500000000001818989" y="2591.63033653333377515082"/>
-            <coordinate x="2846.10500000000001818989" y="2423.85000000159971023095"/>
-          </coordinates>
-          <geometries>
-            <geometry>horizontal</geometry>
-            <geometry>vertical</geometry>
-            <geometry>horizontal</geometry>
-          </geometries>
-          <style>dashed</style>
-        </hopsangui>
-      </connect>
       <connect endport="P2" startport="P1" endcomponent="Translational_Mass_With_Coulomb_Friction" startcomponent="Force_Source">
         <hopsangui>
           <coordinates>
-            <coordinate x="2990.11999999999989086064" y="2423.84999999999990905053"/>
-            <coordinate x="2990.11999999999989086064" y="2425.66033653333352049231"/>
-            <coordinate x="2909.83499999999958163244" y="2425.66033653333352049231"/>
-            <coordinate x="2909.83499999999958163244" y="2423.85000000159971023095"/>
+            <coordinate x="2997.11999999999989086064" y="2335.85000000000036379788"/>
+            <coordinate x="2997.11999999999989086064" y="2335.66033653333352049231"/>
+            <coordinate x="2942.83499999999912688509" y="2335.66033653333352049231"/>
+            <coordinate x="2942.83499999999912688509" y="2335.85000000160016497830"/>
           </coordinates>
           <geometries>
             <geometry>horizontal</geometry>
@@ -922,10 +912,10 @@
       <connect endport="F" startport="y" endcomponent="Force_Source" startcomponent="Constant">
         <hopsangui>
           <coordinates>
-            <coordinate x="3073.50000000000000000000" y="2423.84999999999990905053"/>
-            <coordinate x="3049.11999999999989086064" y="2423.84999999999990905053"/>
-            <coordinate x="3049.11999999999989086064" y="2423.84999999999990905053"/>
-            <coordinate x="3029.11999999999989086064" y="2423.84999999999990905053"/>
+            <coordinate x="3073.50000000000000000000" y="2335.85000000000036379788"/>
+            <coordinate x="3049.11999999999989086064" y="2335.85000000000036379788"/>
+            <coordinate x="3049.11999999999989086064" y="2335.85000000000036379788"/>
+            <coordinate x="3036.11999999999989086064" y="2335.85000000000036379788"/>
           </coordinates>
           <geometries>
             <geometry>vertical</geometry>
@@ -1073,6 +1063,78 @@
             <geometry>vertical</geometry>
           </geometries>
           <style>solid</style>
+        </hopsangui>
+      </connect>
+      <connect endport="out" startport="in" endcomponent="Velocity_Transducer" startcomponent="Scope_6">
+        <hopsangui>
+          <coordinates>
+            <coordinate x="3112.00000000000000000000" y="2516.00000000000000000000"/>
+            <coordinate x="3022.42000000000007275958" y="2516.00000000000000000000"/>
+            <coordinate x="3022.42000000000007275958" y="2538.38000000000010913936"/>
+          </coordinates>
+          <geometries>
+            <geometry>vertical</geometry>
+            <geometry>horizontal</geometry>
+          </geometries>
+          <style>solid</style>
+        </hopsangui>
+      </connect>
+      <connect endport="out" startport="in_right" endcomponent="Position_Transducer" startcomponent="Scope_5">
+        <hopsangui>
+          <coordinates>
+            <coordinate x="2591.00000000000000000000" y="2536.19999999999981810106"/>
+            <coordinate x="2736.02000000000043655746" y="2536.19999999999981810106"/>
+            <coordinate x="2736.02000000000043655746" y="2545.19999999999981810106"/>
+          </coordinates>
+          <geometries>
+            <geometry>vertical</geometry>
+            <geometry>horizontal</geometry>
+          </geometries>
+          <style>solid</style>
+        </hopsangui>
+      </connect>
+      <connect endport="P2" startport="P2" endcomponent="Ball_Screw" startcomponent="Torsional_Spring_1">
+        <hopsangui>
+          <coordinates>
+            <coordinate x="2534.51999999999998181011" y="2440.50000000000000000000"/>
+            <coordinate x="2565.52000000000043655746" y="2440.50000000000000000000"/>
+            <coordinate x="2565.52000000000043655746" y="2456.50000000000000000000"/>
+            <coordinate x="2584.52000000000043655746" y="2456.50000000000000000000"/>
+          </coordinates>
+          <geometries>
+            <geometry>vertical</geometry>
+            <geometry>horizontal</geometry>
+            <geometry>vertical</geometry>
+          </geometries>
+          <style>solid</style>
+        </hopsangui>
+      </connect>
+      <connect endport="P1" startport="P1" endcomponent="Ball_Screw" startcomponent="Position_Transducer">
+        <hopsangui>
+          <coordinates>
+            <coordinate x="2736.02000000000043655746" y="2581.19999999999981810106"/>
+            <coordinate x="2736.02000000000043655746" y="2437.00000000000000000000"/>
+            <coordinate x="2638.02000000000043655746" y="2437.00000000000000000000"/>
+          </coordinates>
+          <geometries>
+            <geometry>horizontal</geometry>
+            <geometry>vertical</geometry>
+          </geometries>
+          <style>dashed</style>
+        </hopsangui>
+      </connect>
+      <connect endport="P1" startport="P1" endcomponent="Ball_Screw" startcomponent="Velocity_Transducer">
+        <hopsangui>
+          <coordinates>
+            <coordinate x="3022.42000000000007275958" y="2574.38000000000010913936"/>
+            <coordinate x="3022.42000000000007275958" y="2437.00000000000000000000"/>
+            <coordinate x="2638.02000000000043655746" y="2437.00000000000000000000"/>
+          </coordinates>
+          <geometries>
+            <geometry>horizontal</geometry>
+            <geometry>vertical</geometry>
+          </geometries>
+          <style>dashed</style>
         </hopsangui>
       </connect>
     </connections>
