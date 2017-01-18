@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="MechanicVehicle1D.hpp" typename="MechanicVehicle1D" displayname="1D Road Vehicle">
+        <icons>
+            <icon scale="1" path="MechanicVehicle1D.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="MechanicVehicle1D.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <help>
+            <text>A one dimmensional vehicle model with rolling resitance and aerodynamic drag. CDF-player for Mathematica documents can be found on http://www.wolfram.com/cdf-player/</text>
+            <link>MechanicVehicle1D.nb</link>
+        </help>       
+       <ports>
+            <port x="1" y="0.8" a="0" name="fr"/>
+            <port x="1" y="0.6" a="0" name="xc"/>
+            <port x="1" y="0.5" a="0" name="vc"/>
+            <port x="1" y="0.7" a="0" name="fd"/>
+            <port x="0.2" y="1" a="90" name="Pmr1"/>
+            <port x="0.8" y="1" a="90" name="Pmr2"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

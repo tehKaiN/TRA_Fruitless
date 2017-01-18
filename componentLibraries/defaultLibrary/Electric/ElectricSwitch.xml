@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="ElectricSwitch.hpp" typename="ElectricSwitch" displayname="Switch">
+        <icons>
+            <icon scale="1" path="ElectricSwitch.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="ElectricSwitch.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <help>
+            <text>Electric switch.</text>
+            <link>ElectricSwitch.nb</link>
+        </help>        <ports>
+            <port x="0.5" y="0" a="270" name="state"/>
+            <port x="0" y="0.73" a="180" name="Pel1"/>
+            <port x="1" y="0.7" a="0" name="Pel2"/>
+        </ports>
+        <animation>
+            <icon userpath="ElectricSwitch.svg"/>
+            <movable>
+                <start x="0" y="0" a="0"/>
+                <transformorigin x="0" y="0"/>
+                <icon userpath="ElectricSwitch_active.svg"/>
+                <data port="state" dataname="Value" idx="0"/>
+                <movement x="0" y="0" a="0" idx="0"/>
+                <switchable offvalue="0" onvalue="1" port="state" dataname="Value"/>
+            </movable>
+        </animation>
+    </modelobject>
+</hopsanobjectappearance>

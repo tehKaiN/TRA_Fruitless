@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="HydraulicPressureControlledValve.hpp" typename="HydraulicPressureControlledValve" displayname="Pressure Controlled Valve">
+        <icons>
+            <icon scale="1" path="pvalve_user.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="pvalve_iso.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <ports>
+            <port x="0.3125" y="0" a="90" name="P1"/>
+            <port x="0.3125" y="1" a="270" name="P2"/>
+            <port x="0.625" y="0.375" a="180" name="P_CLOSE"/>
+            <port x="0" y="0.375" a="0" name="P_OPEN"/>
+        </ports>
+        <animation>
+            <icon userpath="pvalve_user_base.svg"/>
+            <movable idx="0">
+                <icon userpath="prv_user_movable2.svg"/>
+                <data port="x0" dataname="Value" idx="0"/>
+                <movement x="-2.1e7" y="0" a="0" idx="0"/>
+                <start x="40" y="32.512" a="0"/>
+                <resize x="840000" y="0" idx1="0"/>
+                <transformorigin x="0" y="0"/>
+            </movable>
+            <movable idx="1">
+                <icon userpath="prv_user_movable.svg"/>
+                <data port="x0" dataname="Value" idx="0"/>
+                <movement x="-2.1e7" y="0" a="0" idx="0"/>
+                <start x="-19" y="0" a="0"/>
+                <transformorigin x="0" y="0"/>
+            </movable>
+        </animation>
+    </modelobject>
+</hopsanobjectappearance>

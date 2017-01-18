@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="MechanicTranslationalMass.hpp" typename="MechanicTranslationalMass" displayname="Translational Mass">
+        <icons>
+            <icon scale="1" path="mass_user.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="mass_iso.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <help>
+            <picture>masshelp.svg</picture>
+            <text>A translational inertia modelled according to Euler's first law of motion. Limitation parameters apply to port P2.</text>
+        </help>
+        <ports>
+            <port x="0" y="0.5" a="0" name="P1"/>
+            <port x="1" y="0.5" a="0" name="P2"/>
+        </ports>
+        <animation>
+            <icon userpath="mass_user_base.svg"/>
+            <movable>
+                <icon userpath="mass_user_movable.svg"/>
+                <data port="P1" dataname="Position" idx="0"/>
+                <movement x="77.5" y="0" a="0" idx="0"/>
+                <start x="0" y="0" a="0"/>
+                <transformorigin x="0" y="0"/>
+		        <movingport portname="P1" startx="0" starty="20"/>
+		        <movingport portname="P2" startx="65" starty="20"/>
+            </movable>
+        </animation>
+    </modelobject>
+</hopsanobjectappearance>

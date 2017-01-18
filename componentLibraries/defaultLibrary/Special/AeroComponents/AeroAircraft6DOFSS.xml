@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hopsanobjectappearance version="0.3">
+  <modelobject typename="AeroAircraft6DOFSS" displayname="AeroAircraft6DOFSS">
+    <icons>
+      <icon path="AeroAircraft6DOFSS.svg" type="user" scale="1" iconrotation=""/>
+      <icon path="AeroAircraft6DOFSS.svg" type="iso" scale="1" iconrotation=""/>
+    </icons>
+     <help>
+            <text>Six degree of freedom flight dynamic model of an aircraft with modelling of supersonic characteristics. CDF-player for Mathematica documents can be found on http://www.wolfram.com/cdf-player/</text>
+            <link>AeroAircraft6DOFSS.nb</link>
+            <link>AeroAircraft6DOFSS.pdf</link>
+            <link>AeroAircraft6DOFSShelp.pdf</link>
+            <link>AeroAircraft6DOFSS/AeroAircraft6DOFSShelp.pdf</link>
+			<link>AeroAircraft6DOFSS/CLCDfunctions.pdf</link>
+     </help>       
+	  <ports>
+      <port autoplaced="true" name="ycg" y="1" a="90" x="0.0666667" enabled="true"/>
+      <port autoplaced="true" name="Thetao" y="1" a="90" x="0.266667" enabled="true"/>
+      <port autoplaced="true" name="q1" y="1" a="90" x="0.566667" enabled="true"/>
+      <port autoplaced="true" name="Mfuel" y="0" a="270" x="0.565217" enabled="true"/>
+      <port autoplaced="true" name="Qb" y="1" a="90" x="0.466667" enabled="true"/>
+      <port autoplaced="true" name="wturby" y="0" a="270" x="0.913043" enabled="true"/>
+      <port autoplaced="true" name="Par12" y="0.5" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="Phi" y="1" a="90" x="0.3" enabled="true"/>
+      <port autoplaced="true" name="vx" y="1" a="90" x="0.133333" enabled="true"/>
+      <port autoplaced="true" name="Psi" y="1" a="90" x="0.233333" enabled="true"/>
+      <port autoplaced="true" name="thrustr" y="0" a="270" x="0.347826" enabled="true"/>
+      <port autoplaced="true" name="gfz" y="1" a="90" x="0.833333" enabled="true"/>
+      <port autoplaced="true" name="xcg" y="1" a="90" x="0.0333333" enabled="true"/>
+      <port autoplaced="true" name="Wb" y="1" a="90" x="0.4" enabled="true"/>
+      <port autoplaced="true" name="Pfin" y="0.875" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="deCL" y="0" a="270" x="0.130435" enabled="true"/>
+      <port autoplaced="true" name="Par2" y="0.75" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="deCm" y="0" a="270" x="0.217391" enabled="true"/>
+      <port autoplaced="true" name="Par1" y="0.25" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="Pb" y="1" a="90" x="0.433333" enabled="true"/>
+      <port autoplaced="true" name="vM" y="0" a="270" x="0.695652" enabled="true"/>
+      <port autoplaced="true" name="vy" y="1" a="90" x="0.166667" enabled="true"/>
+      <port autoplaced="true" name="Pal1" y="0.125" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="Pal2" y="0.625" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="deythrustl" y="0" a="270" x="0.478261" enabled="true"/>
+      <port autoplaced="true" name="Ub" y="1" a="90" x="0.333333" enabled="true"/>
+      <port autoplaced="true" name="q2" y="1" a="90" x="0.6" enabled="true"/>
+      <port autoplaced="true" name="zcg" y="1" a="90" x="0.1" enabled="true"/>
+      <port autoplaced="true" name="Mcargo" y="0" a="270" x="0.608696" enabled="true"/>
+      <port autoplaced="true" name="wturbz" y="0" a="270" x="0.956522" enabled="true"/>
+      <port autoplaced="true" name="CL1" y=".1" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="Cd1" y=".2" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="CL2" y=".3" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="Cd2" y=".4" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="CLtot" y=".5" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="Cdtot" y=".6" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="Lift1" y=".7" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="Lift2" y=".8" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="v" y=".9" a="0" x="1" enabled="true"/>
+      <port autoplaced="true" name="Vb" y="1" a="90" x="0.366667" enabled="true"/>
+      <port autoplaced="true" name="AlphaAttack" y="1" a="90" x="0.666667" enabled="true"/>
+      <port autoplaced="true" name="vturby" y="0" a="270" x="0.782609" enabled="true"/>
+      <port autoplaced="true" name="deCn" y="0" a="270" x="0.26087" enabled="true"/>
+      <port autoplaced="true" name="q0" y="1" a="90" x="0.533333" enabled="true"/>
+      <port autoplaced="true" name="BetaSlip" y="1" a="90" x="0.7" enabled="true"/>
+      <port autoplaced="true" name="deCl" y="0" a="270" x="0.173913" enabled="true"/>
+      <port autoplaced="true" name="Pal12" y="0.375" a="0" x="0" enabled="true"/>
+      <port autoplaced="true" name="Faz" y="1" a="90" x="0.966667" enabled="true"/>
+      <port autoplaced="true" name="deCD" y="0" a="270" x="0.0434783" enabled="true"/>
+      <port autoplaced="true" name="Rb" y="1" a="90" x="0.5" enabled="true"/>
+      <port autoplaced="true" name="rho" y="0" a="270" x="0.652174" enabled="true"/>
+      <port autoplaced="true" name="deythrustr" y="0" a="270" x="0.521739" enabled="true"/>
+      <port autoplaced="true" name="vturbz" y="0" a="270" x="0.826087" enabled="true"/>
+      <port autoplaced="true" name="vturbx" y="0" a="270" x="0.73913" enabled="true"/>
+      <port autoplaced="true" name="wturbx" y="0" a="270" x="0.869565" enabled="true"/>
+      <port autoplaced="true" name="Fax" y="1" a="90" x="0.933333" enabled="true"/>
+      <port autoplaced="true" name="altitude" y="1" a="90" x="0.733333" enabled="true"/>
+      <port autoplaced="true" name="gfy" y="1" a="90" x="0.8" enabled="true"/>
+      <port autoplaced="true" name="dezthrustr" y="0" a="270" x="0.434783" enabled="true"/>
+      <port autoplaced="true" name="dezthrustl" y="0" a="270" x="0.391304" enabled="true"/>
+      <port autoplaced="true" name="vz" y="1" a="90" x="0.2" enabled="true"/>
+      <port autoplaced="true" name="gfx" y="1" a="90" x="0.766667" enabled="true"/>
+      <port autoplaced="true" name="deCY" y="0" a="270" x="0.0869565" enabled="true"/>
+      <port autoplaced="true" name="q3" y="1" a="90" x="0.633333" enabled="true"/>
+      <port autoplaced="true" name="thrustl" y="0" a="270" x="0.304348" enabled="true"/>
+    </ports>
+    <animation hydraulicmaxpressure="20000000" flowspeed="100" hydraulicminpressure="0"/>
+  </modelobject>
+</hopsanobjectappearance>

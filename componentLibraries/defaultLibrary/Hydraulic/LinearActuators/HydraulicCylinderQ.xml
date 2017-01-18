@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="HydraulicCylinderQ.hpp" typename="HydraulicCylinderQ" displayname="Q-type Piston">
+        <icons>
+            <icon scale="1" path="cylinderq_user.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="cylinderq_iso.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <help>
+            <text>This is a Q-type hydraulic linear actuator with second order dynamics. The capacitances in the chambers are neglected.</text>
+            <picture>cylinderqhelp.svg</picture>
+        </help>
+        <ports>
+            <port x="0.0274" y="1" a="90" name="P1"/>
+            <port x="0.466" y="1" a="90" name="P2"/>
+            <port x="1" y="0.5" a="0" name="P3"/>
+        </ports>
+        <animation>
+            <icon userpath="cylinderq_user_base.svg"/>
+            <movable idx="0">
+                <icon userpath="cylinderc_user_movable_2.svg"/>
+                <data port="P1" dataname="Pressure" idx="0"/>
+                <start x="1.5" y="1.5" a="0"/>
+                <initcolor g="0" r="0" b="255"/>
+                <color g="0" idx="0" r="-0.00001275" b="0.00001275"/>
+                <transformorigin x="0" y="0"/>
+            </movable>
+            <movable idx="1">
+                <icon userpath="cylinderc_user_movable_2.svg"/>
+                <data port="P3" dataname="Position" idx="0"/>
+                <data port="P2" dataname="Pressure" idx="1"/>
+                <movement x="-77" y="0" a="0" idx="0" divisor="s_l"/>
+                <start x="11" y="1.5" a="0"/>
+                <resize x="1" y="0" idx1="0" divisor="s_l"/>
+                <initscale x="1" y="1"/>
+                <initcolor g="0" r="0" b="255"/>
+                <color g="0" idx="1" r="-0.00001275" b="0.00001275"/>
+                <transformorigin x="0" y="0"/>
+            </movable>
+            <movable idx="2">
+                <icon userpath="cylinderq_user_movable.svg"/>
+                <data port="P3" dataname="Position" idx="0"/>
+                <movement x="-77.5" y="0" a="0" idx="0" divisor="s_l"/>
+                <start x="0" y="0" a="0"/>
+                <transformorigin x="0" y="0"/>
+                <movingport startx="100" portname="P3" starty="20"/>
+            </movable>
+        </animation>
+    </modelobject>
+</hopsanobjectappearance>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="SignalStaircase.hpp" typename="SignalStaircase" displayname="Staircase">
+        <icons>
+            <icon scale="1.0" path="staircase.svg" iconrotation="OFF" type="user"/>
+        </icons>
+        <ports>
+            <port x="1.0" y="0.5" a="0" name="out"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

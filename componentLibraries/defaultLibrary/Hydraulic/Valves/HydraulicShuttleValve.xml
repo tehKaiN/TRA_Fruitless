@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="HydraulicShuttleValve.hpp" typename="HydraulicShuttleValve" displayname="Shuttle Valve">
+        <icons>
+            <icon scale="1" path="shuttlevalve_user.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="shuttlevalve_iso.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <ports>
+            <port x="0" y="0.5" a="0" name="P1"/>
+            <port x="1" y="0.5" a="180" name="P2"/>
+            <port x="0.5" y="0" a="270" name="P3"/>
+            <port x="0.5" y="1" a="90" name="out"/>
+        </ports>
+        <animation>
+            <icon userpath="shuttlevalve_user_base.svg"/>
+            <movable idx="0">
+                <icon userpath="shuttlevalve_user_movable.svg"/>
+                <data port="out" dataname="Value" idx="0"/>
+                <movement x="15.815" y="0" a="0" idx="0"/>
+                <start x="0" y="0" a="0"/>
+                <transformorigin x="0" y="0"/>
+            </movable>
+        </animation>
+    </modelobject>
+</hopsanobjectappearance>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="SignalSquareWave.hpp" typename="SignalSquareWave" displayname="Square Wave">
+        <icons>
+            <icon scale="1" path="squarewave.svg" iconrotation="OFF" type="user"/>
+        </icons>
+        <help>
+            <picture>squarewavehelp.svg</picture>
+        </help>
+        <ports>
+            <port x="1" y="0.5" a="0" name="out"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

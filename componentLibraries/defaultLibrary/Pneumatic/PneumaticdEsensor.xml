@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="PneumaticdEsensor.hpp" typename="PneumaticdEsensor" displayname="PneumaticdEsensor">
+        <icons>
+            <icon scale="1" path="PneumaticdEsensor.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="PneumaticdEsensor.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <ports>
+            <port x="0.5" y="1" a="90" name="Pp1"/>
+            <port x="0.5" y="0" a="270" name="out"/>
+        </ports>
+        <animation flowspeed="100"/>
+    </modelobject>
+</hopsanobjectappearance>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="Signal1DLookupTable.hpp" typename="Signal1DLookupTable" displayname="1DLookupTable">
+        <icons>
+            <icon scale="1" path="SignalNDLookupTable.svg" iconrotation="ON" type="user"/>
+        </icons>
+        <help>
+            <text>The input is a text file with comma separated values, a .csv file. The supported formats are " decimal '.' and separator ',' " or " decimal ',' and separator ';' ".
+            Data must be stored in at least two columns of equal number of rows in the CSV file. The input and output column indexes can be selected.
+            Example for 5 samples of two different data values and a common index column:
+            i1, d1, v1
+            i2, d2, v2
+            i3, d3, v3
+            i4, d4, v4
+            i5, d5, v5
+The index value vectors has to be strictly increasing, if this is not the case, it will be automatically sorted. Duplicate values in the input data vectors are not allowed.
+One blank (empty) line must be present at the end of the data file.</text>
+        </help>
+        <ports>
+            <port x="0" y="0.5" a="180" name="in"/>
+            <port x="1" y="0.5" a="0" name="out"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

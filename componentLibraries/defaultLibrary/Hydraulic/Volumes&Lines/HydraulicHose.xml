@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="HydraulicHose.hpp" typename="HydraulicHose" displayname="Long Line With Visco Elastic Walls">
+        <icons>
+            <icon scale="1" path="hose_user.svg" iconrotation="ON" type="user"/>
+            <icon scale="1" path="hose_iso.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <ports>
+            <port x="0" y="0.264" a="0" name="P1"/>
+            <port x="1" y="0.264" a="0" name="P2"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

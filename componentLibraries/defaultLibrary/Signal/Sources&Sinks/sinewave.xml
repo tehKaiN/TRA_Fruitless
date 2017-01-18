@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="SignalSineWave.hpp" typename="SignalSineWave" displayname="Sine Wave">
+        <icons>
+            <icon scale="1" path="sinewave.svg" iconrotation="OFF" type="iso"/>
+        </icons>
+        <help>
+            <text>Implemets the function y=Ya*sin(((T-Tstart)-y_offset)*2PI*f)</text>
+            <picture>sinewavehelp.svg</picture>
+        </help>
+        <ports>
+            <port x="1" y="0.5" a="0" name="out"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

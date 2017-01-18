@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="MechanicAngularVelocityTransformer.hpp" typename="MechanicAngularVelocityTransformer" displayname="Angular velocity source">
+        <icons>
+            <icon scale="1" path="MechanicAngularVelocityTransformer.svg" iconrotation="ON" type="iso"/>
+        </icons>
+        <help>
+            <text>Angular velocity source, controlable by signal.</text>
+        </help>
+        <ports>
+            <port x="0" y="0.5" a="180" name="omega"/>
+            <port x="1" y="0.5" a="0" name="out"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>
