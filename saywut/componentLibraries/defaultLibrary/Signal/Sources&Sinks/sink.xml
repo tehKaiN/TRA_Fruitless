@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hopsanobjectappearance version="0.3">
+    <modelobject sourcecode="SignalSink.hpp" typename="SignalSink" displayname="Scope">
+        <icons>
+            <icon scale="1" path="Sink.svg" iconrotation="OFF" type="user"/>
+        </icons>
+        <help>
+            <text>This component does nothing, but is required to plot values for non-connected ports.</text>
+        </help>
+        <ports>
+            <port x="1" y="0.5" a="0" name="in_right"/>
+            <port x="0" y="0.5" a="180" name="in"/>
+            <port x="0.5" y="1" a="90" name="in_bottom"/>
+        </ports>
+    </modelobject>
+</hopsanobjectappearance>

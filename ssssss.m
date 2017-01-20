@@ -1,0 +1,20 @@
+Rt1 = 10;
+Rt2 = 10;
+Rt3 = 1;
+Cs1 = 1;
+Cs2 = 1;
+I1 = 1;
+I2 = 1;
+I3 = 1;
+eta = 1;
+w3 = 1;
+m = 1;
+Pn = 1;
+
+wolny = Rt3+Rt2+Rt1-((Rt1*Cs2+Rt1*Cs2)/(Cs1));
+s = I1+I2+I3+((Rt2*Rt3+Rt1*Rt3)/(Cs2))+Rt1*Rt2+((Rt1*Rt3)/(Cs1));
+s2 = ((Rt2*I1+Rt3*I1+Rt1*I2+Rt1*I3)/Cs1)+((I1*Rt3+I2*Rt3+Rt2*I3+Rt1*Rt2*Rt3+Rt1*I3)/Cs2);
+s3 = ((I1*I2+I1*I3)/Cs1)+((I1*I3+I2*I3+Rt1*Rt2*I3*Rt1+Rt3*I2)/Cs2)+((I1*Rt2*Rt3)/(Cs1*Cs2));
+s4 = ((Rt3*I2*I1+I1*I3*Rt2)/(Cs1*Cs2))+((Rt1*I2*I3)/(Cs2));
+s5 = ((I1*I2*I3)/(Cs1*Cs2));
+mian = ((2*eta*I3*pi*w3)/(m*Pn));

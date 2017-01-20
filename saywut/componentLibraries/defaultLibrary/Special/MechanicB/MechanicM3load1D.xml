@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hopsanobjectappearance version="0.3">
+  <modelobject typename="MechanicM3load1D" displayname="MechanicM3load1D">
+    <icons>
+      <icon iconrotation="ON" type="user" scale="1" path="MechanicM3load1D.svg"/>
+      <icon iconrotation="ON" type="iso" scale="1" path="MechanicM3load1D.svg"/>
+    </icons>
+    <help>
+      <text>A one dimensional model of three masses. Mass M1 and M2 are connected trough a friction model with M3.
+      CDF-player for Mathematica documents can be found on http://www.wolfram.com/cdf-player/</text>
+      <link>MechanicM3load1D.nb</link>
+   </help>       
+   <ports>
+      <port x="1.00" y="0" enabled="false" autoplaced="true" name="m1FrictionCoulomb" a="270"/>
+      <port x="0.65" y="0" enabled="false" autoplaced="true" name="m2FrictionCoulomb" a="270"/>
+      <port x="0.30" y="0" enabled="false" autoplaced="true" name="m3FrictionCoulomb" a="270"/>
+      <port x="0.50" y="0" enabled="false" autoplaced="true" name="m12FrictionCoulomb" a="270"/>
+      <port x="0.15" y="0" enabled="false" autoplaced="true" name="m13FrictionCoulomb" a="270"/>
+      <port x="1.00" y="1" enabled="true" autoplaced="true" name="m1Position" a="90"/>
+      <port x="0.65" y="1" enabled="true" autoplaced="true" name="m2Position" a="90"/>
+      <port x="0.30" y="1" enabled="true" autoplaced="true" name="m3Position" a="90"/>      
+      <port x="0.975" y="1" enabled="true" autoplaced="true" name="m1Velocity" a="90"/>
+      <port x="0.625" y="1" enabled="true" autoplaced="true" name="m2Velocity" a="90"/>
+      <port x="0.275" y="1" enabled="true" autoplaced="true" name="m3Velocity" a="90"/>      
+      <port x="0.15" y="1" enabled="true" autoplaced="true" name="Pm3" a="90"/>
+      <port x="0.50" y="1" enabled="true" autoplaced="true" name="Pm2" a="90"/>
+      <port x="1.00" y="0.5" enabled="true" autoplaced="true" name="Pm1" a="0"/>
+      <port x="0.60" y="1" enabled="true" autoplaced="true" name="m12FrictionForce" a="90"/>
+      <port x="0.25" y="1" enabled="true" autoplaced="true" name="m13FrictionForce" a="90"/>
+      <port x="0.90" y="1" enabled="true" autoplaced="true" name="m1FrictionForce" a="90"/>
+      <port x="0.55" y="1" enabled="true" autoplaced="true" name="m2FrictionForce" a="90"/>
+      <port x="0.20" y="1" enabled="true" autoplaced="true" name="m3FrictionForce" a="90"/>
+    </ports>
+    <animation hydraulicminpressure="0" hydraulicmaxpressure="20000000" flowspeed="100"/>
+  </modelobject>
+</hopsanobjectappearance>
